@@ -8,9 +8,15 @@
 <div>
 <body>
 	<h1>TEXT</h1>
-	<p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, ligula sed dictum facilisis, nisi neque gravida diam, nec viverra augue eros nec nunc. Fusce vel interdum mi. Aenean vel tellus sed est ornare tincidunt. Suspendisse interdum lacus lorem, sit amet porttitor ipsum varius quis</p>
-	<p><strong><em>Integer</strong> auctor est ac fringilla euismod. Donec laoreet urna vel diam blandit venenatis. Nam fermentum turpis a mauris condimentum, vitae faucibus leo commodo.</em></p>
-	<p><strong>Vestibulum</strong> elit nisi, posuere ut hendrerit a, molestie eu leo. Donec sit amet ullamcorper turpis. Mauris eu tellus blanit turpis fermentum dapibus eget sed ex. Vivamus auctor in velit ac suscipit. in hac habitasse platea dictumst.</p>
+	<div>
+		<p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porttitor, ligula sed dictum facilisis, nisi neque gravida diam, nec viverra augue eros nec nunc. Fusce vel interdum mi. Aenean vel tellus sed est ornare tincidunt. Suspendisse interdum lacus lorem, sit amet porttitor ipsum varius quis</p>
+	</div>
+	<div class="indent">
+		<blockquote><p ><em><strong>Integer</strong> auctor est ac fringilla euismod. Donec laoreet urna vel diam blandit venenatis. Nam fermentum turpis a mauris condimentum, vitae faucibus leo commodo.</em></p></blockquote>
+	</div>
+	<div>
+		<p><strong>Vestibulum</strong> elit nisi, posuere ut hendrerit a, molestie eu leo. Donec sit amet ullamcorper turpis. Mauris eu tellus blanit turpis fermentum dapibus eget sed ex. Vivamus auctor in velit ac suscipit. in hac habitasse platea dictumst.</p>
+	</div>
 </body>
 </div>
 <div>
@@ -77,34 +83,45 @@
 </div>
 <div>
 	<h1>Form</h1>
-<form>
-  First: <input type="text" name="firstname">
-  Last: <input type="text" name="lastname">
-</form>
-  <br>
-<form>
-  <label for="sport-select">Favorite Sport:</label>
-<select id="sport-select">
-  <option value="Football">Football</option>
-  <option value="Baseball">Baseball</option>
-  <option value="Hockey">Hocket</option>
-  <option value="Quidditch">Quidditch</option>
-  <option value="Golf">Golf</option>
-  <option value="Lacrosse">Lacrosse</option>
-</form>
-  <br>
-<form>
-  <input type="checkbox" name="choose" value="Attended">Attended
-  <input type="checkbox" name="choose" value="Played">Played
-  <input type="checkbox" name="choose" value="Coached">Coached
-  <input type="checkbox" name="choose" value="Bet on">Bet On  
+	<form>
+	  First: <input type="text" name="firstname">
+	  Last: <input type="text" name="lastname">
+	</form>
+</div>
+<div>
+	<form>
+	  <label for="sport-select">Favorite Sport:</label>
+	  <select id="sport-select">
+	  <option value="Football">Football</option>
+	  <option value="Baseball">Baseball</option>
+	  <option value="Hockey">Hocket</option>
+	  <option value="Quidditch">Quidditch</option>
+	  <option value="Golf">Golf</option>
+	  <option value="Lacrosse">Lacrosse</option>
 	</select>
+	</form>
+</div>
+<div>
+	<form>
+		<label for="checkbox-select">I have:</label>
+	  <input type="checkbox" name="select" value="Attended">Attended
+	  <input type="checkbox" name="select" value="Played">Played
+	  <input type="checkbox" name="select" value="Coached">Coached
+	  <input type="checkbox" name="select " value="Bet on">Bet On  
+	  <label>this sport</label>
+	</form>
+</div>
+<div>
+  <form action="submit_form.php" method="post">
+    <label for="radio-select">For this sport I prefer the:</label>
+    <input type="radio" name="select" value="Amateur">Amateur
+    <input type="radio" name="select" value="College">College
+    <input type="radio" name="select" value="Professional">Professional
+<div>
+    <input type="submit" name="send"> 
+</div>
 </form>
 </div>
 
-   
-
-
-
-	</tbody>
+</tbody>
 </html>
